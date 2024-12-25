@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Gotham Pro'; /* Имя шрифта для использования в CSS */
+  src: local('Gotham Pro'), /* Имя шрифта, установленного локально на устройстве */
+       url('fonts/GOTHAMPRO.TTF') format('.TTF'); /* Путь к файлу шрифта */
+  font-weight: normal; /* Вес шрифта */
+  font-style: normal; /* Стиль шрифта */
+}
+
+/* Применение шрифта */
+body {
+  font-family: 'Gotham Pro', sans-serif;
+}
