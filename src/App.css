@@ -1,3 +1,71 @@
-#root {
-    
+.page {
+    height: 100vh;
+    width: 100vw;
+    background: #00ff12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.song__image {
+    width: 600px;
+    height: 600px;
+}
+
+.song {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 300px;
+    padding-left: 70px;
+    color: #ffffff;
+    font-stretch: condensed;
+}
+
+.song__name {
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.song__main {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.artist-logo {
+    margin-right: 30px;
+    width: 200px;
+    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.artist-logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.artist-logos .and {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 30px;
+    font-size: 50px;
+}
+
+.artist-logo.lari {
+    width: 250px;
+}
+
+.feat {
+    margin-top: 20px;
+    display: flex;
+}
+
+.feat > div:first-child {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+    font-size: 40px;
 }
