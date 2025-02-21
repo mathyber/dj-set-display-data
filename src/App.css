@@ -7,9 +7,15 @@
     justify-content: center;
 }
 
+/*.song__image {*/
+/*    width: 600px;*/
+/*    height: 600px;*/
+/*}*/
+
 .song__image {
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
+    filter: blur(1px)
 }
 
 .song {
@@ -26,7 +32,7 @@
     font-size: 80px;
     text-transform: uppercase;
     margin-bottom: 40px;
-    max-width: 400px;
+    max-width: 420px;
 }
 
 .song__main {
@@ -56,6 +62,10 @@
 
 .artist-logo.lari {
     width: 250px;
+}
+
+.artist-logo.udio {
+    padding-bottom: 23px;
 }
 
 .feat {

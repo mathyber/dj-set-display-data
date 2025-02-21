@@ -12,6 +12,9 @@ const ArtistImg = ({name}) => {
         case 'Suno': {
             return img('suno.svg')
         }
+        case 'Udio': {
+            return img('udio.svg', 'udio')
+        }
         default: return <div className='artist-logo'>{name}</div>
     }
 }
@@ -31,6 +34,7 @@ const Artists = ({names}) => {
 
 const SongBlock = ({index}) => {
     const songInfo = tracklist[index];
+    console.log(tracklist)
 
     return (
         <div className='song'>
@@ -39,7 +43,7 @@ const SongBlock = ({index}) => {
                     {songInfo.name}
                 </div>
                 <Artists names={songInfo.artists?.main}/>
-                {songInfo.artists?.feat && <div className='feat'>
+                {!!songInfo.artists?.feat?.length && <div className='feat'>
                     <div>feat. </div>
                     <Artists names={songInfo.artists?.feat}/>
                 </div>}
